@@ -1,1 +1,140 @@
-ECHO is on.
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+
+.menu{
+    width: 60px;
+    height: 100vh;
+    background-color: #123;
+    padding: 20px;
+overflow: hidden;
+transition: .5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+   
+    display: block;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+ 
+    gap: 50px;
+    transition: .5s;
+}
+ul li a:hover,.active,td{
+    background-color: #ffffff55;
+}
+.log-out{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.log-out a{
+    background-color: red;
+}
+ul li a i {
+    font-size: 30px;
+}
+.imag-box{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 3px white;
+    flex-shrink: 0;
+}.imag-box image{
+    width: 100%;
+    height: 100%;
+}
+.profile{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.imag-box h2{
+    font-size: 20px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+    
+}
+.titleinfo{
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0481ff;
+}
+.datainfo{
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+align-items: center;
+justify-content: space-between;
+
+}
+.datainfo .box1{
+   background-color: #123;
+   flex-basis: 150px;
+   height: 150px;
+   flex-grow: 1;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.datainfo .box1 i{
+    font-size: 40px;
+
+}
+.datainfo .box1 div{
+    text-align: center;
+}
+.datainfo .box1 span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+text-align: center;
+border-spacing: 8px;
+
+}
+th,td{
+    background-color: #123;
+    height: 40px;
+    border-radius: 10px;
+}
+th{
+    background-color: #0080ff;
+}
+.price,.count{
+    padding: 6px;
+    border-radius: 8px;
+}
+.price {
+    background-color: green;
+}
+.count {
+    background-color: yellow;
+    color: black;
+}
